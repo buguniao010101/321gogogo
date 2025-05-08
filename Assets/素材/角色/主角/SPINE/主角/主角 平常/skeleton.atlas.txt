@@ -1,0 +1,167 @@
+
+skeleton.png
+size: 2048,1558
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+上眼睑
+  rotate: false
+  xy: 1548, 1020
+  size: 200, 43
+  orig: 299, 402
+  offset: 62, 181
+  index: -1
+下嘴唇
+  rotate: false
+  xy: 687, 1516
+  size: 85, 41
+  orig: 299, 402
+  offset: 58, 181
+  index: -1
+下眼睑
+  rotate: false
+  xy: 1759, 871
+  size: 181, 44
+  orig: 299, 402
+  offset: 64, 188
+  index: -1
+主角站立/上臂
+  rotate: true
+  xy: 691, 33
+  size: 208, 682
+  orig: 1378, 2039
+  offset: 126, 745
+  index: -1
+主角站立/上衣
+  rotate: false
+  xy: 2, 552
+  size: 798, 1005
+  orig: 1378, 2039
+  offset: 214, 554
+  index: -1
+主角站立/内衬
+  rotate: 270
+  xy: 76, 4
+  size: 280, 503
+  orig: 1378, 2039
+  offset: 457, 1076
+  index: -1
+主角站立/前衣领
+  rotate: false
+  xy: 1032, 550
+  size: 282, 158
+  orig: 1378, 2039
+  offset: 447, 1472
+  index: -1
+主角站立/右臂
+  rotate: 270
+  xy: 561, 175
+  size: 533, 886
+  orig: 1378, 2039
+  offset: 845, 582
+  index: -1
+主角站立/后衣领
+  rotate: false
+  xy: 1564, 390
+  size: 273, 89
+  orig: 1378, 2039
+  offset: 457, 1553
+  index: -1
+主角站立/左臂下
+  rotate: true
+  xy: 1354, 60
+  size: 233, 693
+  orig: 1378, 2039
+  offset: 127, 246
+  index: -1
+主角站立/拉链
+  rotate: false
+  xy: 2, 1466
+  size: 31, 90
+  orig: 1378, 2039
+  offset: 594, 982
+  index: -1
+主角站立/衣领
+  rotate: false
+  xy: 1415, 448
+  size: 632, 569
+  orig: 1378, 2039
+  offset: 296, 1005
+  index: -1
+主角站立/裤子
+  rotate: true
+  xy: 796, 709
+  size: 847, 732
+  orig: 1378, 2039
+  offset: 327, 0
+  index: -1
+嘴巴
+  rotate: false
+  xy: 1958, 1532
+  size: 85, 25
+  orig: 299, 402
+  offset: 103, 193
+  index: -1
+头发
+  rotate: true
+  xy: 1530, 1166
+  size: 390, 349
+  orig: 391, 363
+  offset: 1, 14
+  index: -1
+头发投影
+  rotate: false
+  xy: 1750, 916
+  size: 283, 248
+  orig: 283, 248
+  offset: 0, 0
+  index: -1
+眉毛
+  rotate: false
+  xy: 1530, 1051
+  size: 205, 74
+  orig: 299, 402
+  offset: 17, 158
+  index: -1
+眼白
+  rotate: false
+  xy: 1530, 1126
+  size: 170, 38
+  orig: 299, 402
+  offset: 64, 185
+  index: -1
+瞳孔
+  rotate: false
+  xy: 1907, 1410
+  size: 139, 42
+  orig: 299, 402
+  offset: 81, 191
+  index: -1
+脖子
+  rotate: false
+  xy: 1218, 467
+  size: 276, 81
+  orig: 1378, 2039
+  offset: 525, 1558
+  index: -1
+脸
+  rotate: true
+  xy: 2, 264
+  size: 298, 401
+  orig: 299, 402
+  offset: 1, 1
+  index: -1
+高光
+  rotate: false
+  xy: 1942, 1508
+  size: 104, 16
+  orig: 299, 402
+  offset: 98, 193
+  index: -1
+鼻子
+  rotate: false
+  xy: 1881, 1445
+  size: 77, 113
+  orig: 299, 402
+  offset: 117, 148
+  index: -1
