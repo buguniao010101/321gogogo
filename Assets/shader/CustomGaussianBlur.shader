@@ -1,9 +1,10 @@
-﻿Shader "Custom/GaussianBlur2D"
+﻿Shader "Custom/GaussianBlur2D_AnimAlpha"
 {
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
         _BlurSize ("Blur Size", Float) = 1.0
+        _Color ("Tint Color (Alpha for Fade)", Color) = (1,1,1,1)  // ⭐ 支持K帧
     }
     SubShader
     {
@@ -24,6 +25,7 @@
             sampler2D _MainTex;
             float4 _MainTex_TexelSize;
             float _BlurSize;
+            float4 _Color; // ⭐ 支持动画控制透明度
 
             struct appdata
             {
@@ -59,7 +61,7 @@
                 fixed4 color = fixed4(0,0,0,0);
                 float weightSum = 0.0;
 
-                // Sample 9 times horizontally and vertically
+                // Sample 9x9 grid for blur
                 for (int x = -4; x <= 4; x++)
                 {
                     for (int y = -4; y <= 4; y++)
@@ -70,7 +72,13 @@
                     }
                 }
 
-                return color / weightSum;
+                color /= weightSum;
+
+                // ⭐ Apply Tint Color and Alpha
+                color.rgb *= _Color.rgb;
+                color.a *= _Color.a;
+
+                return color;
             }
             ENDCG
         }

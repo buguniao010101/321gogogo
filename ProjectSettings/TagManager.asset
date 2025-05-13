@@ -14,9 +14,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - phone
+  - "\u573A\u666F"
+  - "\u6A21\u7CCA"
   - 
   - 
   - 
@@ -41,4 +41,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: "1\u80CC\u666F\u5C42"
+    uniqueID: 2556862103
+    locked: 0
+  - name: "2\u4EBA\u7269\u5C42"
+    uniqueID: 1366785417
+    locked: 0
+  - name: "3UI\u5C42"
+    uniqueID: 1245779233
+    locked: 0
+  - name: "4\u624B\u673A\u5C42"
+    uniqueID: 3348048953
+    locked: 0
+  - name: "5\u5BF9\u8BDD"
+    uniqueID: 828826133
+    locked: 0
+  - name: "\u53EF\u4EA4\u4E92\u7269\u54C1"
+    uniqueID: 574027425
     locked: 0

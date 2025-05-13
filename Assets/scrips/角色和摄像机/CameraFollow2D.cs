@@ -14,8 +14,8 @@ public class CameraFollow2D : MonoBehaviour
 
     void Start()
     {
-        // 默认向左
-        targetOffsetX = -offsetX;
+        // 默认向右
+        targetOffsetX = offsetX;
         currentOffsetX = targetOffsetX;
     }
 
@@ -23,18 +23,25 @@ public class CameraFollow2D : MonoBehaviour
     {
         if (!target) return;
 
-        // 获取角色方向（根据localScale判断，或你可以改成看输入）
+        // 获取角色方向（根据localScale判断）
         bool facingRight = target.localScale.x > 0;
+
+        // 如果角色朝右，偏移量为正，朝左则为负
         targetOffsetX = facingRight ? offsetX : -offsetX;
 
-        // 平滑过渡 offsetX，避免突变
+        // 平滑过渡 offsetX
         currentOffsetX = Mathf.Lerp(currentOffsetX, targetOffsetX, Time.deltaTime * 5f);
 
-        // 计算相机目标位置（只改 X）
+        // 计算相机目标位置
         float targetX = target.position.x + currentOffsetX;
+
+        // 限制相机X轴范围（如果有需要，可以根据实际情况调整范围）
+        targetX = Mathf.Clamp(targetX, -237f, 259f);
+
+        // 计算期望的相机位置
         Vector3 desiredPosition = new Vector3(targetX, fixedY, fixedZ);
 
-        // 平滑移动
+        // 平滑移动相机位置
         transform.position = Vector3.SmoothDamp(transform.position, desiredPosition, ref velocity, smoothSpeed);
     }
 }
