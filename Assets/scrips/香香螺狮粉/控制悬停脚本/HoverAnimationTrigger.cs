@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class HoverAnimationTrigger : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class HoverAnimationTrigger : MonoBehaviour
 {
     private Animator animator;
 
@@ -10,12 +9,12 @@ public class HoverAnimationTrigger : MonoBehaviour, IPointerEnterHandler, IPoint
         animator = GetComponent<Animator>();
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
+    void OnMouseEnter()
     {
         animator.SetBool("IsHover", true);
     }
 
-    public void OnPointerExit(PointerEventData eventData)
+    void OnMouseExit()
     {
         animator.SetBool("IsHover", false);
     }

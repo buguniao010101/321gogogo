@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b85556abd314f3f870c18c013fdcef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickMode: 2
+  clickMode: 1
   nextClickDelay: 0
   cancelEnabled: 1
   ignoreMenuClicks: 1
@@ -598,7 +598,6 @@ GameObject:
   - component: {fileID: 500059097}
   - component: {fileID: 500059096}
   - component: {fileID: 500059095}
-  - component: {fileID: 500059094}
   - component: {fileID: 500059093}
   - component: {fileID: 500059092}
   - component: {fileID: 500059091}
@@ -795,7 +794,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 199.74863
     y: 95.10527
-    width: 131.33334
+    width: 129.0378
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -853,34 +852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 4
   indentLevel: 0
-  storyText: "\uFF08\u5FD9\u788C\u4E2D\uFF09\u5916\u5356K053\u6253\u5305\u597D\u4E86\uFF01"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &500059094
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 500059087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 2
-  indentLevel: 0
-  storyText: "\u770B\u770B\u54EA\u4E2A\u662F\u4F60\u7684\u5355\u53F7\uFF1F"
+  storyText: "\u6B63\u5B97\u53C8\u5B9E\u60E0~"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -889,7 +861,7 @@ MonoBehaviour:
   showCount: 1
   extendPrevious: 0
   fadeWhenDone: 0
-  waitForClick: 0
+  waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
@@ -907,7 +879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: "\u6B22\u8FCE\u5149\u4E34\u9999\u9999\u87BA\u72EE\u7C89~"
+  storyText: "\u6B22\u8FCE\u5149\u4E34\u738B\u8BB0\u997A\u5B50"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -949,9 +921,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 60
-    y: 97
-    width: 113.33333
+    x: 58
+    y: 96
+    width: 110.481094
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -963,7 +935,6 @@ MonoBehaviour:
   - {fileID: 500059092}
   - {fileID: 500059095}
   - {fileID: 500059093}
-  - {fileID: 500059094}
   suppressAllAutoSelections: 0
 --- !u!114 &500059098
 MonoBehaviour:
@@ -978,21 +949,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 0.25136948, y: 1.8947313}
+  scrollPos: {x: 14.057899, y: -10.834789}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.97
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 500059097}
-  selectedCommands:
-  - {fileID: 500059095}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 500059091}
   description: 
@@ -2079,7 +2048,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 200910171}
-        m_MethodName: SetButtonClickedFlag
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2827,7 +2796,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 200910171}
-          m_MethodName: SetDialogClickedFlag
+          m_MethodName: SetButtonClickedFlag
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
